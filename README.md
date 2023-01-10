@@ -15,7 +15,7 @@ To run the script all necessary information are provided in this repository as f
 <li> <strong>template.pdb</strong> is the protein data bank of NTSR1 receptor that used as the reference receptor.</li>
 <li> For training ML models, 58 features are used and a few of receptors in the dataset may not contain all the amino acids. To compensate the missed measurements they are replaced based on label of activation of the receptor using <em>inact_int_act_55_cont_PN_for_incomplete_receptors.pkl</em> for the contact distances and <em>inact_int_act_NPY_anles_for_incomplete_receptors.pkl</em> for the angle features. </li>
 </ul>
-In order to measure all the features for testset the <code>TRAINSET_55_PN_cont_NPY_angle_convertible_for_TESTSET.py'</code> script should be edited. The required cells are 1, 7, 8, 11, 12, 13, 14 and all the <code>try:</code> and <code>except:</code> should be removed in cell 11 because the testset are not labeled. 
+In order to measure all the features for testset the <code>Testset_measuring_cont_pn_angle_npy.py'</code> script should be used. In the script <code>res_indx</code> introduces the indices of amino acids engaged in the Polar Network. If the protein in the simulations is Beta2Ar do not change the indices. 
 
 
 
