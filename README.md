@@ -21,7 +21,7 @@ The results for the features of the GPCRs in the training dataset can be found h
 <code>ML_models_activation_prediction_accuracies.py</code> implements the performance of shallow ML models including Random Forest, Decision Tree, and XGBoost in both classification and regression tasks. The <code>Training_features_in_555_proteins.npy</code> can be used to get the accuracies of the ML models trained with the defined features of the GPCRs in the dataset
 
 <h3>Testset measurements</h3>
-In order to measure all the features for testset the <code>TESTSET_pn_cont_npy_angl.py'</code> script should be used. In the script <code>res_indx</code> introduces the indices of amino acids engaged in the Polar Network. If protein in the simulations is &beta;<sub>2</sub>AR do not change the indices. 
+In order to measure all the features for testset the <code>TESTSET_pn_cont_npy_angl.py</code> script should be used. In the script <code>res_indx</code> introduces the indices of amino acids engaged in the Polar Network. If protein in the simulations is &beta;<sub>2</sub>AR do not change the indices. 
 
 
 
