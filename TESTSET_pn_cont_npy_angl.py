@@ -17,7 +17,7 @@ n = []
 for name in sorted(glob.glob("./*lh5")):
     n.append(name)
 
-cont_55_PA_ca_APY_ang_rf_dt_xgb_pred_h3h6 = []
+cont_55_PN_ca_NPY_ang = []
 a = []
 for name in sorted(glob.glob("./*lh5")):
     trj = md.load_lh5(name, top=None, stride=None, atom_indices=None, frame=None)
@@ -79,9 +79,9 @@ for name in sorted(glob.glob("./*lh5")):
           
         g = (name[52:],frame, asn_ang, pro_ang, tyr_ang, cont_feat)
         features.append(g)
-    cont_55_PA_ca_APY_ang.append(features)
-    nn = pd.DataFrame(cont_55_PA_ca_APY_ang)
+    cont_55_PN_ca_NPY_ang.append(features)
+    nn = pd.DataFrame(cont_55_PN_ca_NPY_ang)
     nn.to_pickle('....pkl')
-    if len(cont_55_PA_ca_APY_ang)  % 10 == 0:
-        print(len(cont_55_PA_ca_APY_ang))
+    if len(cont_55_PN_ca_NPY_ang)  % 10 == 0:
+        print(len(cont_55_PN_ca_NPY_ang))
 
