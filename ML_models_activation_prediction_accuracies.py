@@ -7,7 +7,7 @@ import xgboost
 from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
 from sklearn.model_selection import ShuffleSplit
 
-train = np.load('asn_pro_tyr_angles_55_cont_pn_555_prot.npy', allow_pickle=True)
+train = np.load('Training_features_in_555_proteins.npy', allow_pickle=True)
 df_train = pd.DataFrame(train)
 train_data = df_train.iloc[:, 3:]
 train_act = df_train.iloc[:,1]
