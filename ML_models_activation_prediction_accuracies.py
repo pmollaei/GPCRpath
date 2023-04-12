@@ -41,7 +41,7 @@ print("RF regressor_prediction: ",format(pred_reg.mean(),'.2f'), "accuracy with 
 # #. XGBoost
 
 def model_prediction_XGBoostClassifier(data_inp, label_inp):
-    xgb_model = xgboost.XGBClassifier(num_class=10,
+    xgb_model = xgboost.XGBClassifier(num_class=3,
                                   learning_rate=0.7,
                                   max_depth=10, 
                                   use_label_encoder=False,
